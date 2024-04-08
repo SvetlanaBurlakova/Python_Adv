@@ -32,6 +32,7 @@ else:
 print(f'Проверка суммы: {Fraction(frac_1) + Fraction(frac_2)}')
 
 if mult_of_frac_num == frac_den_mult:
+
     print(f'{frac_1} * {frac_2} = 1')
 else:
     print(f'{frac_1} * {frac_2} = {mult_of_frac_num}/{frac_den_mult}')
