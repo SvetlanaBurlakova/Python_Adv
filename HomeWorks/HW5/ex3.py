@@ -3,15 +3,12 @@
 """
 
 
-def fibonacci(n=0, n1=0, n2=1):
+def fibonacci():
     """Функция генератор чисел Фибоначчи"""
+    n1, n2 = 0, 1
+    yield n1
+    yield n2
     while True:
-        if n == 0:
-            n += 1
-            yield n1
-        if n == 1:
-            n += 1
-            yield n2
         n1, n2 = n2, n1 + n2
         yield n2
 
