@@ -21,3 +21,11 @@ else:
         print(f'год {year} является високосным')
     else:
         print(f'год {year} не является високосным')
+
+if year < START_YEAR:
+    print('слишком ранний год')
+else:
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print(f'год {year} является високосным')
+    else:
+        print(f'год {year} не является високосным')
