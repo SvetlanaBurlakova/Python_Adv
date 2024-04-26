@@ -1,15 +1,13 @@
-# from Seminars.Seminar6 import ex2
-from Seminars.Seminar6 import guess_number
-from HomeWorks import HW7
+from HomeWorks.HW8 import ex7
+from HomeWorks.HW8 import directory_info
 from pathlib import Path
-
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    HW7.ex7.sort_files(Path('dir'))
-    HW7.group_files_rename(Path('dir'), end_file='_file_',digits=3,
-                       extention_before='rnd', extention_after='doc',
-                       name_range=[3, 6])
+    ex7.csv_to_pickle('users_6.csv')
+    structure = ["Объект", "Родительская папка", "Тип объекта", "Размер"]
+    directory_info.go_through_directory(Path('dir'), 'result', structure)
+
 
 
 

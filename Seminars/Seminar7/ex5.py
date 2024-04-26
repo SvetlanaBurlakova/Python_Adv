@@ -4,7 +4,7 @@
 Количество переданных расширений может быть любым. Количество файлов для каждого расширения различно.
 Внутри используйте вызов функции из прошлой задачи.
 """
-from Seminars.Seminars7 import ex4
+from Seminars.Seminar7 import ex4
 
 def generate_files_with_different_ext(dir_ext: dict):
     for k,v in dir_ext.items():
